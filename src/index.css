@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import url('https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Nunito:wght@400;600;700&display=swap');
+
+@theme {
+  --font-heading: 'Fredoka', 'sans-serif';
+  --font-body: 'Nunito', 'sans-serif';
+
+  --color-sun-50: #FFFCF5;
+  --color-sun-100: #FFFAE5;
+  --color-sun-400: #FFD93D;
+  --color-sun-500: #FFC107;
+  --color-sun-600: #F59E0B;
+
+  --color-sky-50: #F0F9FF;
+  --color-sky-100: #E0F2FE;
+  --color-sky-200: #BAE6FD;
+  --color-sky-500: #0EA5E9;
+  --color-sky-600: #0284C7;
+
+  --color-grass-500: #22C55E;
+
+  --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-float: 0 20px 60px -15px rgba(14, 165, 233, 0.3);
+
+  --animate-bounce-slow: bounce 3s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 60s linear infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-sky-100 via-white to-sun-50 min-h-screen text-gray-700 font-body overflow-x-hidden relative;
+}
