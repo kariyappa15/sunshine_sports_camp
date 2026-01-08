@@ -1,15 +1,18 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'
-    }
-
     stages {
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
                     url: 'https://github.com/kariyappa15/sunshine_sports_camp.git'
+            }
+        }
+
+        stage('Check Node Version') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
             }
         }
 
@@ -27,8 +30,12 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'npm run build'
+                sh '''
+                sudo rm -rf /usr/share/nginx/html/*
+                sudo cp -r dist/* /usr/share/nginx/html/
+                '''
             }
         }
     }
 }
+
