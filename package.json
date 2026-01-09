@@ -16,7 +16,9 @@
   "@tailwindcss/postcss": "^4.x.x",
   "tailwindcss": "^4.1.18",
   "postcss": "^8.5.6",
-  "autoprefixer": "^10.4.23"
+  "autoprefixer": "^10.4.23",
+  "vite": "^7.2.4",
+  "@vitejs/plugin-react": "^5.1.1"
 }
   ,
   "description": "React + Vite project for Sunshine Sports Camp enrollment",
