@@ -74,7 +74,7 @@ function App() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 mt-10 md:mt-20 relative z-10 p-4">
           <div className="flex-1 text-center md:text-left space-y-8">
             <div className="inline-block px-4 py-2 bg-sun-100 text-sun-600 rounded-full font-bold text-sm tracking-wide">
-              ☀️ REGISTRATIONS OPEN FOR 2026
+              ☀️ REGISTRATIONS OPEN FOR 2025
             </div>
             <h1 className="font-heading text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
               Make This Summer <br />
